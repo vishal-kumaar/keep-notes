@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <title>Magic Notes</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; top: 0; left: 0; width: 100%; z-index: 1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Magic Notes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="markNotes.html">Marked Notes</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <div id="card">
+            <h3>Welcome to Magic Note</h3>
+            <hr />
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="addTitle">
+                    </div>
+                    <h5 class="card-title">Add a note</h5>
+                    <div class="mb-3">
+                        <textarea class="form-control" id="addText" rows="3"></textarea>
+                    </div>
+                    <button id="addBtn" class="btn btn-primary">Add Note</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <h3>Your Notes</h3>
+        <hr />
+        <div id="notes" class="row container-fluid">
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# Magic Notes
+# Keep Notes
 This is a Notes Making Web Application. This is a useful static website for making short notes like Google Notes.<br>
 > We use,
 >- `HTML`
